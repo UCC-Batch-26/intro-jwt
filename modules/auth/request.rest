@@ -1,0 +1,43 @@
+### Login
+# @prompt email
+# @prompt password
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### Only Admin Route
+# @prompt email
+# @prompt password
+POST http://localhost:3000/auth/admin
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### Edit
+# @prompt email
+# @prompt password
+POST http://localhost:3000/auth/edit
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+### Update Password
+# @prompt email
+# @prompt password
+POST http://localhost:3000/auth/password
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "newPassword": "{{password}}"
+}
